@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+/* font-family: 'Poppins', sans-serif; 200 400 and 600 */
+
+* { 
+  box-sizing:border-box;
+}
+
+:root {
+  --pry-red:hsl(0, 78%, 62%);
+  --pry-cyan:hsl(180, 62%, 55%);
+  --pry-orange:hsl(34, 97%, 64%);
+  --pry-blue:hsl(212, 86%, 64%);
+  --ntr-very-dark-blue:hsl(234, 12%, 34%);
+  --ntr-grayish-blue:hsl(229, 6%, 66%);
+  --very-light-gray:hsl(0, 0%, 98%);
+  font-size:15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.pry-red-border { border-top:5px solid  var(--pry-red)}
+.pry-cyan-border { border-top:5px solid var(--pry-cyan) }
+.pry-orange-border { border-top:5px solid var(--pry-orange) }
+.pry-blue-border { border-top:5px solid var(--pry-blue) }
+
+h1,h2,h3,h4 {
+  margin:0;
+}
+body {
+  margin:0;
+  padding:0;
+}
+
+
+.content__header {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+.content__header > * {
+  margin:0;
+  padding:0;
+}
+
+.content__header h1 {
+  font-size:2rem;
+  font-weight: 200;
+  color:var(--ntr-very-dark-blue);
+  font-weight: 200;
+}
+.content__header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color:var(--ntr-very-dark-blue);
+  margin-bottom: 1rem;
+}
+.content__header p {
+  width:40%;
+  text-align: center;
+}
+
+p {
+  color: var(--ntr-grayish-blue);
+}
+
+.content__cards {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  width:1200px;
+  margin:auto;
+  gap:1rem;
+  margin-bottom:1rem;
+}
+
+.column_1,.column_3 {
+  align-self: center;
+}
+.column_2 {
+  display:grid; 
+  gap:1rem;
+}
+
+.card1,.card2,.card3,.card4 {
+  box-shadow: 5px 5px 15px 1px gray;
+  padding:2.5rem 2rem;
+  margin:0 1rem;
+}
+.card_img {
+  display:flex;
+  justify-content: flex-end;
+  padding-top:2rem;
+}
+
+@media only screen and (max-width:900px){
+  .content__cards {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    width:80%;
+  }
+}
