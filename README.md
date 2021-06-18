@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- [Preview]()
+- [Preview](https://jesse-snow.github.io/Four-card-feature-section/)
 
 ## My process
 
@@ -49,4 +49,4 @@ Make css grid more resonive items
 
 ## Author
 
-- [GitHub]()
+- [GitHub](https://github.com/Jesse-Snow)
