@@ -49,4 +49,4 @@ Make css grid more resonive items
 
 ## Author
 
-- [GitHub](https://github.com/Jesse-Snow)
+- GitHub - [Jesse-Snow](https://github.com/Jesse-Snow)
